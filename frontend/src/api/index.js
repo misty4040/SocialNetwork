@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5001/api/users',
+  baseURL: 'https://socialnetwork-1-culr.onrender.com/api/users',
 });
 
 export const addUser = (name) => api.post('/add', { name });
